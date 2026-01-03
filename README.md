@@ -4,7 +4,7 @@
 
 # [demo](https://bretttolbert.com/assets/projects/ancestry/index.php)
 
-Use case: You want to take the genealogical information you've collected from various sources and display it on a web site in a presentable format so you can share it with family etc. 
+Use case: You want to take the genealogical information you've collected (e.g. year of birth, place of birth, bio, photographs) from various sources and display it on a web site in a presentable format so you can share it with family etc. 
 
 The intent of this project is only to display direct ancestors and not siblings, cousins, aunts and uncles, etc. Although such info may be included in the bio HTML for each ancestor.
 
