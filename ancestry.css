@@ -1,0 +1,77 @@
+body {
+    color: white;
+    background-color:#181818;
+    font-size: 1em;
+    font-family: sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    min-height: 100vh;      /* Ensures body takes at least full viewport height */
+    margin: 0;              /* Removes default body margins */
+}
+
+header {
+    background-color: #333;
+}
+
+main {
+    flex: 1;                /* Allows main content to grow and fill available space */
+}
+
+footer {
+    font-size: 0.8em;
+    /* Optional styling */
+    background-color: #333;
+    color: white;
+    padding: 0.2em;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    /* Optional: set a width less than 100% to see the centering effect */
+    width: 80%; 
+}
+
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+table, td, th {
+    border: 1px solid gray;
+    text-align: center;
+}
+
+/* no underline */
+a {
+  text-decoration: none;
+}
+
+/* unvisited link */
+a:link {
+    color: white;
+}
+
+/* visited link */
+a:visited {
+    color: white;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+.link {
+    margin: 1em;
+    font-size: 2em;
+}
