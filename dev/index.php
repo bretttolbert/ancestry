@@ -24,6 +24,7 @@
 
         $yobYod = "";
         $pob = "";
+        $pod = "";
         $bio = "";
         if ($data != null) {
             if (array_key_exists('yob', $data)) {
@@ -38,6 +39,9 @@
         if (array_key_exists('pob', $data)) {
             $pob = $data['pob'];
         }
+        if (array_key_exists('pod', $data)) {
+            $pod = $data['pod'];
+        }
         if (array_key_exists('bio', $data)) {
             $bio = $data['bio'];
         }
@@ -49,10 +53,24 @@
         <div class="wrapper">
             <table>
                 <tr>
-                    <th>Place of Birth</th>
+                    <?php
+                    if ($pob != "") {
+                        echo "<th>Place of Birth</th>";
+                    }
+                    if ($pod != "") {
+                        echo "<th>Place of Death</th>";
+                    }
+                    ?>
                 </tr>
                 <tr>
-                    <td><?php echo $pob; ?></td>
+                    <?php
+                    if ($pob != "") {
+                        echo "<td>$pob</td>";
+                    }
+                    if ($pod != "") {
+                        echo "<td>$pod</td>";
+                    }
+                    ?>
                 </tr>
             </table>
             <div>
